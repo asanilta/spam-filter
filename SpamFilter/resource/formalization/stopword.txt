@@ -49,7 +49,6 @@ bakal
 bakalan
 balik
 banyak
-bapak
 baru
 bawah
 beberapa
@@ -256,7 +255,6 @@ ialah
 ibarat
 ibaratkan
 ibaratnya
-ibu
 ikut
 ingat
 ingat-ingat

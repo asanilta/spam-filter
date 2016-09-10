@@ -38,10 +38,13 @@ public class PreProcess {
         ArrayList<String> result = new ArrayList<String>();
         
         for (String word : token) {
-            result.add(formalizer.deleteStopword(formalizer.formalizeWord(word)).trim());            
+            String r = formalizer.deleteStopword(formalizer.formalizeWord(word)).trim();            
+            for (String l : r.split("[,/.()+-=]")) {
+                result.add(formalizer.formalizeWord(l).trim());                
+            }            
         }
         
-        result.removeAll(Arrays.asList("", null, "-", ".", ":", ";", "+", "(", ")", "*", "!", "?"));
+        result.removeAll(Arrays.asList("", null, "-", ".", ":", ";", "+", "(", ")", "*", "!", "?", ",", "/", "\\", "[", "]", "<", ">", "=", "_", "\""));
                               
         return result;    
     }

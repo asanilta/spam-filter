@@ -22,7 +22,7 @@ public class SpamFilter {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String sentence = "Selamat SIM CARD anda Tr,pilih menjadi pemenang Dari pesta ISI ULANG PT.M-TRONIK 2016 PIN HADIAH 25e477r untk info KLICK: www.hadiahresmimtronik.blogspot.com";
+        String sentence = "Maaf.Untuk Pembayaran Angsuran Klu Mau di Bayar Harap Tlp Dulu Ke Atasan Saya Bpk BAHRI/IBU RIKA 081806005667 Soalnya Sudah di Kuasakan Kepada Beliau.Thanks";
         PreProcess p = new PreProcess();
         System.out.println(Arrays.toString(p.run(sentence).toArray()));
     }

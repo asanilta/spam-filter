@@ -457,6 +457,7 @@ jkt	jakarta
 jln	jalan
 jnj	janji
 jomblo	tidak punya pacar
+jt	juta
 jth	jatuh
 jubir	juru bicara
 jurdil	jujur adil
@@ -528,6 +529,7 @@ kl	kalau
 klian	kalian
 klianz	kalian
 klo	kalau
+klu	kalau
 kloter	kelompok terbang
 kluarga	keluarga
 klw	kalau
@@ -890,6 +892,7 @@ rakor	rapat koordinasi
 rame	ramai
 ranmor	kendaraan bermotor
 raskin	rakyat miskin
+rb	ribu
 re	reply
 red	redaksi
 ref	referensi
