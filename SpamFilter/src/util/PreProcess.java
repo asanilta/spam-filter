@@ -10,6 +10,8 @@ import IndonesianNLP.IndonesianSentenceFormalization;
 import IndonesianNLP.IndonesianSentenceTokenizer;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -37,7 +39,16 @@ public class PreProcess {
         formalizer.initStopword(); 
         ArrayList<String> result = new ArrayList<String>();
         
-        for (String word : token) {
+        for (int i = 0; i < token.size(); i++) {
+            String word = token.get(i);
+            
+            if (!isLink(word) && word.contains(".")) {
+                String[] words = word.split("\\.");
+                if (words.length>1) {
+                    word = words[0];
+                    token.add(i+1,words[1]);
+                }
+            }
             String r = formalizer.deleteStopword(formalizer.formalizeWord(word)).trim();            
             for (String l : r.split("[,/.()+-=]")) {
                 result.add(formalizer.formalizeWord(l).trim());                
@@ -47,6 +58,13 @@ public class PreProcess {
         result.removeAll(Arrays.asList("", null, "-", ".", ":", ";", "+", "(", ")", "*", "!", "?", ",", "/", "\\", "[", "]", "<", ">", "=", "_", "\""));
                               
         return result;    
+    }
+    
+    public boolean isLink (String token) {
+        String regex = "((https?://)|(www\\.)|(https?://)|(www\\.))[\\w\\-\\.~]+\\.[a-z]{2,6}(/[\\w\\-\\.~]*)*";
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(token);
+        return (m.matches());
     }
         
 }

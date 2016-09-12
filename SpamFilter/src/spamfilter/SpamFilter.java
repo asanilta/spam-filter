@@ -10,7 +10,10 @@ import IndonesianNLP.IndonesianSentenceFormalization;
 import IndonesianNLP.IndonesianSentenceTokenizer;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import util.PreProcess;
+import util.FeatureExtract;
 
 /**
  *
@@ -22,9 +25,27 @@ public class SpamFilter {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String sentence = "Maaf.Untuk Pembayaran Angsuran Klu Mau di Bayar Harap Tlp Dulu Ke Atasan Saya Bpk BAHRI/IBU RIKA 081806005667 Soalnya Sudah di Kuasakan Kepada Beliau.Thanks";
+        String sentence1 = "Maaf.Untuk Pembayaran Angsuran Klu Mau di Bayar Harap Tlp Dulu Ke Atasan Saya Bpk BAHRI/IBU RIKA 081806005667 Soalnya Sudah di Kuasakan Kepada Beliau.Thanks";
+        String sentence2 = "Maaf aku tes tes tes dulu ya hihihi http://www.facebook.com";
+        ArrayList<String> smsList = new ArrayList<>();
+        smsList.add(sentence1);
+        smsList.add(sentence2);
         PreProcess p = new PreProcess();
-        System.out.println(Arrays.toString(p.run(sentence).toArray()));
+        ArrayList<ArrayList<String>> processedSmsList = new ArrayList<>();
+        for (String sentence : smsList) {
+            ArrayList<String> processedSms = p.run(sentence);
+            System.out.println(Arrays.toString(processedSms.toArray()));
+            processedSmsList.add(processedSms);
+        }
+        FeatureExtract f = new FeatureExtract();
+        HashMap<String,Double> map = f.tfIdfMap(processedSmsList);
+        
+        for (Map.Entry<String, Double> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+        
+        
+        
     }
     
 }
