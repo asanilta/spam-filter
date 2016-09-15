@@ -14,6 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 import util.PreProcess;
 import util.FeatureExtract;
+import util.SpamFilterConfig;
 
 /**
  *
@@ -40,11 +41,26 @@ public class SpamFilter {
 //            p.writeToFile(String.valueOf(i), processedSms);
 //            i++;
 //        }
+        String currentDir = System.getProperty("user.dir");
+        SpamFilterConfig.initializeConfig(
+                currentDir + "\\dataset\\Text Dataset - SPAM.csv",
+                currentDir + "\\dataset\\Text Dataset - NOT SPAM.csv",
+                currentDir + "\\dataset\\preprocessed\\",
+                "spam",
+                "not spam",
+                currentDir + "\\dataset\\data.arff");
         
-        PreProcess.processCSV("spam", System.getProperty("user.dir") + "/dataset/Text Dataset - SPAM.csv");
-        PreProcess.processCSV("notspam", System.getProperty("user.dir") + "/dataset/Text Dataset - NOT SPAM.csv");
+//        PreProcess.processCSV(
+//                SpamFilterConfig.getPreprocessedFileNameSpam(),
+//                SpamFilterConfig.getDatasetSpamPath());
+//        
+//        PreProcess.processCSV(
+//                SpamFilterConfig.getPreprocessedFileNameNotSpam(),
+//                SpamFilterConfig.getDatasetNotSpamPath());
+        System.out.println(SpamFilterConfig.getPreprocessedFilePath());
+        FeatureExtract.createArff(SpamFilterConfig.getPreprocessedFilePath());
         // PreProcess.run("Maaf.Untuk Pembayaran Angsuran Klu Mau di Bayar Harap Tlp Dulu Ke Atasan Saya Bpk BAHRI/IBU RIKA 081806005667 Soalnya Sudah di Kuasakan Kepada Beliau.Thanks");
-        
+
 //        FeatureExtract f = new FeatureExtract();
 //        HashMap<String,Double> map = f.tfIdfMap(processedSmsList);
 //        
@@ -52,5 +68,5 @@ public class SpamFilter {
 //            System.out.println(entry.getKey() + ": " + entry.getValue());
 //        }
     }
-    
+
 }

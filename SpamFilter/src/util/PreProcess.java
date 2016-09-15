@@ -98,7 +98,7 @@ public class PreProcess {
     
     private static void writeToFile(String filename, ArrayList<String> terms) {
         try {
-            File file = new File(System.getProperty("user.dir") + "/corpus/" + filename + ".txt");
+            File file = new File(SpamFilterConfig.getPreprocessedFilePath() + filename + ".txt");
             file.getParentFile().mkdirs();
             System.out.println("Writing to " + file.getCanonicalPath());
 

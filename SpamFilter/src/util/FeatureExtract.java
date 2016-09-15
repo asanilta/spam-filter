@@ -4,14 +4,42 @@
  * and open the template in the editor.
  */
 package util;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import weka.core.Instances;
+import weka.core.converters.ArffSaver;
+import weka.core.converters.TextDirectoryLoader;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.StringToWordVector;
 
 /**
  *
  * @author ASUS X202E
  */
 public class FeatureExtract {
+    
+    public static void createArff(String directory) {
+        TextDirectoryLoader loader = new TextDirectoryLoader();
+        try {
+            loader.setDirectory(new File(directory));
+            Instances dataRaw = loader.getDataSet();
+            StringToWordVector filter = new StringToWordVector();
+            filter.setIDFTransform(true); // using tf-idf
+            filter.setInputFormat(dataRaw);
+            Instances dataFiltered = Filter.useFilter(dataRaw, filter);
+            ArffSaver saver = new ArffSaver();
+            saver.setInstances(dataFiltered);
+            saver.setFile(new File(SpamFilterConfig.getArffFilePath()));
+            saver.writeBatch();
+        } catch (Exception ex) {
+            Logger.getLogger(FeatureExtract.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
     public double tf(ArrayList<String> sms, String term) {
     double result = 0;
     for (String word : sms) {
