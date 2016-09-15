@@ -25,27 +25,32 @@ public class SpamFilter {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String sentence1 = "Maaf.Untuk Pembayaran Angsuran Klu Mau di Bayar Harap Tlp Dulu Ke Atasan Saya Bpk BAHRI/IBU RIKA 081806005667 Soalnya Sudah di Kuasakan Kepada Beliau.Thanks";
-        String sentence2 = "Maaf aku tes tes tes dulu ya hihihi http://www.facebook.com";
-        ArrayList<String> smsList = new ArrayList<>();
-        smsList.add(sentence1);
-        smsList.add(sentence2);
-        PreProcess p = new PreProcess();
-        ArrayList<ArrayList<String>> processedSmsList = new ArrayList<>();
-        for (String sentence : smsList) {
-            ArrayList<String> processedSms = p.run(sentence);
-            System.out.println(Arrays.toString(processedSms.toArray()));
-            processedSmsList.add(processedSms);
-        }
-        FeatureExtract f = new FeatureExtract();
-        HashMap<String,Double> map = f.tfIdfMap(processedSmsList);
+//        String sentence1 = "Maaf.Untuk Pembayaran Angsuran Klu Mau di Bayar Harap Tlp Dulu Ke Atasan Saya Bpk BAHRI/IBU RIKA 081806005667 Soalnya Sudah di Kuasakan Kepada Beliau.Thanks";
+//        String sentence2 = "Maaf aku tes tes tes dulu ya hihihi http://www.facebook.com";
+//        ArrayList<String> smsList = new ArrayList<>();
+//        smsList.add(sentence1);
+//        smsList.add(sentence2);
+//        PreProcess p = new PreProcess();
+//        ArrayList<ArrayList<String>> processedSmsList = new ArrayList<>();
+//        int i = 1;
+//        for (String sentence : smsList) {
+//            ArrayList<String> processedSms = p.run(sentence);
+//            System.out.println(Arrays.toString(processedSms.toArray()));
+//            processedSmsList.add(processedSms);
+//            p.writeToFile(String.valueOf(i), processedSms);
+//            i++;
+//        }
         
-        for (Map.Entry<String, Double> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
+        PreProcess.processCSV("spam", System.getProperty("user.dir") + "/dataset/Text Dataset - SPAM.csv");
+        PreProcess.processCSV("notspam", System.getProperty("user.dir") + "/dataset/Text Dataset - NOT SPAM.csv");
+        // PreProcess.run("Maaf.Untuk Pembayaran Angsuran Klu Mau di Bayar Harap Tlp Dulu Ke Atasan Saya Bpk BAHRI/IBU RIKA 081806005667 Soalnya Sudah di Kuasakan Kepada Beliau.Thanks");
         
-        
-        
+//        FeatureExtract f = new FeatureExtract();
+//        HashMap<String,Double> map = f.tfIdfMap(processedSmsList);
+//        
+//        for (Map.Entry<String, Double> entry : map.entrySet()) {
+//            System.out.println(entry.getKey() + ": " + entry.getValue());
+//        }
     }
     
 }
