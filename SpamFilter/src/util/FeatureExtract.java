@@ -8,8 +8,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import weka.classifiers.Evaluation;
+import weka.classifiers.trees.SimpleCart;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.TextDirectoryLoader;
@@ -25,16 +28,31 @@ public class FeatureExtract {
     public static void createArff(String directory) {
         TextDirectoryLoader loader = new TextDirectoryLoader();
         try {
+            // convert the directory into a dataset
             loader.setDirectory(new File(directory));
             Instances dataRaw = loader.getDataSet();
+            
+            // apply the StringToWordVector and tf-idf weighting
             StringToWordVector filter = new StringToWordVector();
-            filter.setIDFTransform(true); // using tf-idf
+            filter.setIDFTransform(true);
             filter.setInputFormat(dataRaw);
             Instances dataFiltered = Filter.useFilter(dataRaw, filter);
+            
+            // output the arff file
             ArffSaver saver = new ArffSaver();
             saver.setInstances(dataFiltered);
             saver.setFile(new File(SpamFilterConfig.getArffFilePath()));
             saver.writeBatch();
+            
+            // train with simple cart
+            SimpleCart classifier = new SimpleCart();
+            classifier.buildClassifier(dataFiltered);
+            
+            // using 10 cross validation
+            Evaluation eval = new Evaluation(dataFiltered);
+            eval.crossValidateModel(classifier, dataFiltered, 10, new Random(1));
+            
+            System.out.println("\n\nClassifier model:\n\n" + eval.toSummaryString());
         } catch (Exception ex) {
             Logger.getLogger(FeatureExtract.class.getName()).log(Level.SEVERE, null, ex);
         }
