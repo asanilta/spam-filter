@@ -1,9 +1,13 @@
-7an	tujuan
 @	di
+7an	tujuan
+aamiin	amin
+aamin	amin
 ababil	abg labil
 abis	habis
 acc	accord
+acra	acara
 ad	ada
+adl	adalah
 adlah	adalah
 adlh	adalah
 adoh	aduh
@@ -13,6 +17,7 @@ ahaha	haha
 aing	saya
 aj	saja
 aja	saja
+ajaa	saja
 ajep-ajep	dunia gemerlap
 ajj	saja
 ak	saya
@@ -21,15 +26,21 @@ akika	aku
 akko	aku
 akkoh	aku
 akku	aku
+akn	akan
+akuu	aku
 akuwh	aku
 akyu	aku
+alamtnya	alamatnya
 alay	norak
 aljasa	asal jadi saja
 alow	halo
 ama	sama
 ambilin	ambilkan
 ambl	ambil
+amiin	amin
 ancur	hancur
+anggta	anggota
+angktn	angkatan
 anjir	anjing
 anjrit	anjing
 ank	anak
@@ -46,6 +57,8 @@ apva	apa
 aq	saya
 aqu	aku
 aquwh	aku
+asalamualaikum	assalamualaikum
+asalamuallaikum	assalamualaikum
 asap	sesegera mungkin
 asbun	asal bunyi
 aseek	asyik
@@ -54,8 +67,13 @@ asek	asyik
 asekk	asyik
 aseknya	asyiknya
 asem	asam
+aslmkm	assalamualaikum
+aslmkum	assalamualaikum
 asoy	asyik
 aspal	asli tetapi palsu
+ass	assalamualaikum
+assalaamualaikum	assalamualaikum
+assalamualaykum	assalamualaikum
 astrojim	astagfirullahaladzim
 astul	asal tulis
 ath	kalau begitu
@@ -69,6 +87,7 @@ ay	sayang
 ayang	sayang
 ayank	sayang
 ayok	ayo
+ayuk	ayo
 b4	sebelum
 bacot	banyak bicara
 bakalan	akan
@@ -76,6 +95,7 @@ bales	balas
 bandes	bantuan desa
 bangdes	pembangunan desa
 bangedh	banget
+bangeet	banget
 bangkotan	tua
 banpol	bantuan polisi
 banpres	bantuan presiden
@@ -83,6 +103,7 @@ banpur	bantuan tempur
 bansarkas	bantuan sarana kesehatan
 basbang	basi
 bazis	badan amal, zakat, infak, dan sedekah
+bbrp	beberapa
 bcanda	bercanda
 bcoz	karena
 bdg	bandung
@@ -129,6 +150,8 @@ bnchi	benci
 bnci	benci
 bngung	bingung
 bnran	yang benar
+bntu	bantu
+bnyak	banyak
 bnyk	banyak
 bodor	lucu
 bohay	badan aduhai
@@ -145,8 +168,12 @@ bonyok	ayah ibu
 boyeh	boleh
 bpk	bapak
 br	baru
+brakhir	berakhir
+brapa	berapa
 brb	segera kembali
 brg	bareng
+brhasil	berhasil
+brkt	berangkat
 brngkt	berangkat
 bro	saudara laki-laki
 brp	berapa
@@ -156,8 +183,10 @@ bs	bisa
 bsa	bisa
 bsen	bosan
 bsk	besok
+bsok	besok
 bt	bosan sekali
 bt	buat
+btr	bentar
 btw	ngomong-ngomong
 bu_bu	tidur
 buaya	tidak setia
@@ -188,6 +217,7 @@ capcus	pergi
 cape	capek
 caper	cari perhatian
 caur	jelek
+cba	coba
 ce	cewek
 cekak	tidak ada uang
 cekal	cegah tangkal
@@ -368,6 +398,10 @@ gj	tidak jelas
 gk	tidak
 gmana	bagaimana
 gmn	bagaimana
+gmna	gimana
+gmna	gimana
+gmpng	mudah
+gmpng	mudah
 gn	begini
 goblog	goblok
 goblok	bodoh
@@ -386,6 +420,8 @@ gtau	tidak tahu
 gtw	tidak tahu
 gua	saya
 gue	saya
+gunakn	gunakan
+gunakn	gunakan
 guoblok	goblok
 guys	teman-teman
 gw	saya
@@ -410,12 +446,18 @@ hny	hanya
 hnya	hanya
 hoax	isu bohong
 houm	rumah
+hpnya	handphone
 hr	hari
+hrga	harga
+hrganya	harganya
+hrgnya	harganya
 hrs	harus
 hrus	harus
+hsil	hasil
 hubad	hubungan angkatan darat
 hubdar	perhubungan darat
 hubla	perhubungan laut
+hubngi	hubungi
 huff	mengeluh
 huft	mengeluh
 hum	rumah
@@ -429,6 +471,8 @@ imba	jago sekali
 imho	in my humble opinion
 imoet	imut
 imoetz	imut
+indo	indonesia
+indon	indonesia
 info	informasi
 item	hitam
 itung	hitung
@@ -449,15 +493,23 @@ jdikan	jadikan
 jem	jam
 jg	juga
 jga	juga
+jgan	jangan
 jgn	jangan
 jgnkan	jangankan
 jijay	jijik
 jir	anjing
 jkt	jakarta
 jln	jalan
+jminan	jaminan
+jminkan	jaminkan
+jminkn	jaminkan
+jmnan	jaminan
+jnis	jenis
 jnj	janji
 jomblo	tidak punya pacar
 jt	juta
+jt	juta
+jta	juta
 jth	jatuh
 jubir	juru bicara
 jurdil	jujur adil
@@ -513,6 +565,8 @@ kepingin	mau
 kepo	mau tahu urusan orang
 kepsek	kepala sekolah
 kere	tidak punya uang
+kerjan	kerjaan
+kermh	ke rumah
 kesbang	kesatuan bangsa
 kesian	kasihan
 kesra	kesejahteraan rakyat
@@ -523,19 +577,24 @@ kgiatan	kegiatan
 khan	kan
 kibul	bohong
 kibus	kaki busuk
+kiios	kios
+kilk	klik
 kimpoi	kawin
+kirm	kirim
 kk	kakak
 kl	kalau
 klian	kalian
 klianz	kalian
 klo	kalau
-klu	kalau
 kloter	kelompok terbang
+klu	kalau
 kluarga	keluarga
 klw	kalau
 klwrga	keluarga
 km	kamu
 kmari	kemari
+kmbli	kembali
+kmmpuan	kemampuan
 kmps	kampus
 kmpus	kampus
 kmrn	kemarin
@@ -544,6 +603,7 @@ knal	kenal
 knl	kenal
 knp	kenapa
 knpa	kenapa
+kntr	kantor
 kodya	kota madya
 kog	kok
 komdis	komisi disiplin
@@ -558,10 +618,13 @@ korup	korupsi
 kpd	kepada
 kpn	kapan
 kptsan	keputusan
+krdt	kredit
 krenz	keren
 krik	garing
 krm	kirim
 krn	karena
+krt	kartu
+krtu	kartu
 kt	kita
 ktauan	ketahuan
 ktmu	ketemu
@@ -575,6 +638,7 @@ ky	seperti
 kyk	seperti
 kykny	kayanya
 la	lah
+lainlain	lain-lain
 laka	kecelakaan
 lam	salam
 lambreta	lambat
@@ -599,8 +663,10 @@ lht	lihat
 liat	lihat
 linmas	perlindungan masyarakat
 litbang	penelitian dan pengembangan
+lkp	lengkap
 lmyan	lumayan
 lmyn	lumayan
+lnggkap	lengkap
 lngkp	lengkap
 lo	kamu
 loch	loh
@@ -613,6 +679,8 @@ loupz	cinta
 low	kalau
 lowh	kamu
 lp	lupa
+lsg	langsung
+lsng	langsung
 lu	kamu
 luber	langsung, umum, bebas, dan rahasia
 luchu	lucu
@@ -654,9 +722,21 @@ mao	mau
 markus	makelar kasus
 masukin	masukkan
 mba	mbak
+mbil	mobil
+mdal	modal
+mdapat	mendapat
+mdpat	mendapat
+mdpt	mendapat
 melu	ikut
+membntu	membantu
 mending	lebih baik
+mendpt	mendapat
+mendptkan	mendapatkan
+menghub	menghubungi
+menghubugi	menghubungi
+menhubungi	menghubungi
 mepet	dekat sekali
+meyampaikan	menyampaikan
 mgkn	mungkin
 mgu	minggu
 mhn	mohon
@@ -664,12 +744,30 @@ migas	minyak dan gas bumi
 miker	minuman keras
 mikol	minuman beralkohol
 milis	mailing list
+minatt	minat
 miras	minuman keras
 mksd	maksud
+mksih	terima kasih
 mlah	malah
+mlai	mulai
 mls	malas
+mlysia	malaysia
+mmbantu	membantu
+mnambah	menambah
+mnambah	menambah
+mncicil	mencicil
+mncintai	mencintai
+mndpatkan	mendapatkan
+mndpt	mendapat
+mndptkan	mendapatkan
+mndptkn	mendapatkan
 mngkn	mungkin
+mngobati	mengobati
+mnikah	menikah
+mnjlankn	menjalankan
 mnt	minta
+mnyamarkn	menyamarkan
+mnyeimbagkn	menyeimbangkan
 mo	mau
 moge	motor gede
 mokad	mati
@@ -683,6 +781,8 @@ mskpn	meskipun
 mslh	masalah
 msng2	masing-masing
 mt	makan teman
+mtor	motor
+mtr	motor
 muahal	mahal
 mubes	musyawarah besar
 muker	musyawarah kerja
@@ -710,7 +810,7 @@ napa	kenapa
 napa	kenapa
 napi	narapidana
 napol	narapidana politik
-napza	narkotika, alkohol, psikotropika, dan zat adiktif 
+napza	narkotika, alkohol, psikotropika, dan zat adiktif
 naq	anak
 narkoba	narkotika, psikotropika, dan obat terlarang
 narsis	bangga pada diri sendiri
@@ -721,9 +821,11 @@ ndak	tidak
 ndiri	sendiri
 ndut	gendut
 ne	ini
+negri	negeri
 nekolim	neokolonialisme
 nekolin	neokolonialisme
 nelfon	menelepon
+nelp	menelpon
 nembak	menyatakan cinta
 ngabis2in	menghabiskan
 ngabuburit	menunggu berbuka puasa
@@ -778,12 +880,16 @@ nih	ini
 nimbrung	ikut serta
 niyh	nih
 nkah	nikah
+nmor	nomor
 nmr	nomor
 nnti	nanti
 nntn	nonton
 no	nomor
 nobar	nonton bareng
+nomr	nomor
 nongkrong	kumpul-kumpul
+nonya	nomornya
+norek	nomor rekening
 np	now playing
 nrp	narapidana
 ntar	nanti
@@ -835,10 +941,13 @@ patas	cepat dan terbatas
 pd	pada
 pdhl	padahal
 pede	percaya diri
+pelangga	pelanggan
 pelatda	pemusatan latihan daerah
 pelatnas	pemusatan latihan nasional
+pembayaranya	pembayarannya
 pembokat	pembantu
 pemda	pemerintah daerah
+pemenag	pemenang
 pemilu	pemilihan umum
 pemkot	pemerintah kota
 pemprov	pemerintah provinsi
@@ -859,13 +968,24 @@ pi	tapi
 pijetin	pijitkan
 pilkada	pemilihan kepala daerah
 pimpro	pemimpin proyek
+pinjeman	pinjaman
 pisan	sangat
 pisgor	pisang goreng
 pk	penjahat kelamin
 pke	pakai
+plengkap	pelengkap
 plg	paling
+plggn	pelanggan
+plnasan	pelunasan
+plnggan	pelanggan
+plsa	pulsa
+plunasan	pelunasan
 pm	private message
+pmenang	pemenang
 pmrnth	pemerintah
+pncairan	pencairan
+pnting	penting
+pntupan	penutupan
 pny	punya
 pohn	pohon
 polantas	polisi lalu lintas
@@ -875,9 +995,14 @@ ponsel	telepon seluler
 pp	pulang pergi
 ppa	apa
 prg	pergi
+pribdi	pribadi
+prihal	perihal
 priksa	periksa
+priode	periode
 prnh	pernah
 pro	profesional
+prses	proses
+prtma	pertama
 psen	pesan
 psn	pesan
 pst	pasti
@@ -899,7 +1024,9 @@ ref	referensi
 reg	register
 rehab	rehabilitasi
 rejeki	rezeki
+rekning	nomor rekening
 rempong	sulit
+rencna	rencana
 renstra	rencana strategis
 repp	balas
 reskrim	reserse kriminal
@@ -917,8 +1044,6 @@ rusunawa	rumah susun sewa
 rutan	rumah tahanan
 ruz	terus
 s4	sempat
-sy	saya
-Sy	saya
 saia	saya
 saiank	sayang
 salting	salah tingkah
@@ -931,10 +1056,16 @@ sapose	siapa
 satkorlak	satuan koordinator pelaksana
 satpam	satuan pengamanan
 say	sayang
+sbagai	sebagai
+sbagian	sebagian
 sbb	sebagai berikut
+sbesar	sebesar
 sbg	sebagai
+sbgai	sebagai
 sbh	sebuah
 sblm	sebelum
+sblmnya	sebelumnya
+sblum	sebelum
 sbnrny	sebenarnya
 scara	secara
 scr	secara
@@ -945,14 +1076,19 @@ sdkt	sedikit
 sdngkn	sedangkan
 se7	setuju
 seabrek	banyak
+sebagei	sebagai
 sebelas dua belas	mirip
+seblahan	bersebelahan
+seger	segar
 sekjen	sekretaris jenderal
 sembako	sembilan bahan pokok
 sempak	celana dalam
 sempet	sempat
 sempet2nya	sempat-sempatnya
 sendratari	seni drama tari
+senen	senin
 sertijab	serah terima jabatan
+sgr	segera
 sgt	sangat
 sgtunya	segitunya
 shg	sehingga
@@ -970,19 +1106,31 @@ skali	sekali
 skalian	sekalian
 skl	sekali
 sklh	sekolah
+skrag	sekarang
 skrg	sekarang
 skt	sakit
 skul	sekolah
+slakan	silakan
+slalu	selalu
+slamat	selamat
+slamt	selamat
 slesai	selesai
 slh	salah
+slhkan	silakan
 sll	selalu
 slm	salam
 slma	selama
+slmat	selamat
 slmt	selamat
 slsai	selesai
 slt	sulit
+sluruh	seluruh
+smampunya	semampunya
+smp	sampai
 smpt	sempat
+smrng	semarang
 smua	semua
+smuanya	semuanya
 smw	semua
 smwny	semuanya
 sndiri	sendiri
@@ -1013,8 +1161,13 @@ suk	masuk
 sumbangin	sumbangkan
 sumpek	sempit
 sy	saya
+Sy	saya
+sy	saya
+syang	sayang
 syg	sayang
 syp	siapa
+syrat	syarat
+syrt	syarat
 t4	tempat
 tabanas	tabungan pembangunan nasional
 tajir	kaya
@@ -1023,13 +1176,16 @@ tau	tahu
 taun	tahun
 taw	tahu
 tawh	tahu
+tbungan	tabungan
 td	tadi
+tdak	tidak
 tdi	tadi
 tdk	tidak
 te2p	tetap
 teh	kakak perempuan
 tekor	rugi
 telat	terlambat
+telfon	telepon
 telkom	telekomunikasi
 telmi	telat berpikir
 telp	telepon
@@ -1039,6 +1195,9 @@ tengil	menyebalkan
 tengok	menjenguk
 tepar	terkapar
 terbitin	terbitkan
+terimahkasih	terima kasih
+terimkasih	terima kasih
+terpiih	terpilih
 tggu	tunggu
 tgl	tanggal
 tgu	tunggu
@@ -1050,24 +1209,31 @@ thx	terima kasih
 tilang	bukti pelanggaran
 tipi	TV
 tipiwan	TvOne
+tkar	tukar
 tkg	tukang
 tks	terima kasih
 tlg	tolong
 tll	terlalu
+tlong	tolong
 tlp	telepon
 tlpn	telepon
+tlpon	telepon
 tls	tulis
 tman	teman
 tmbah	tambah
 tmbh	tambah
+tmbus	tembus
 tmen2	teman-teman
 tmn2	teman-teman
 tmpah	tumpah
 tmph	tumpah
 tmpt	tempat
+tnai	tunai
 tnda	tanda
+tngga	tangga
 tngu	tunggu
 tnh	tanah
+tnp	tanpa
 tnyta	ternyata
 togel	toto gelap
 tokai	tai
@@ -1075,19 +1241,33 @@ tokai	tai
 toserba	toko serba ada
 tp	tapi
 tpi	tapi
+tpilih	terpilih
 tq	terima kasih
 trdhulu	terdahulu
 trgntg	tergantung
 trima	terima kasih
+trimks	terima kasih
 trims	terima kasih
+triplle	triple
+tripple	triple
 trm	terima
+trmks	terima kasih
+trmksh	terima kasih
+trmurah	termurah
+trnsfer	transfer
 trnyt	ternyata
+trpercaya	terpercaya
+trpilih	terpilih
+trplh	terpilih
 trs	terus
+trsedia	tersedia
+trtinggi	tertinggi
 trus	terus
 trutama	terutama
 trz	terus
 ts	penulis
 tsb	tersebut
+tsedia	tersedia
 tst	tahu sama tahu
 ttd	tertanda
 ttg	tentang
@@ -1108,6 +1288,7 @@ ujg	ujung
 ujung2nya	ujung-ujungnya
 ul	ulangan
 ultah	ulang tahun
+untk	untuk
 unyu	lucu
 unyu	menggemaskan
 uplot	unggah
@@ -1115,14 +1296,17 @@ uppu	apa
 urang	saya
 urg	saya
 usah	perlu
+usha	usaha
 utang	hutang
 utk	untuk
 utul	ujian tertulis
 valas	valuta asing
 vol	volume
+vrifikasi	verifikasi
 w/	dengan
 wad	buat
 wadir	wakil direktur
+waduhh	aduh
 wagub	wakil gubernur
 wamil	wajib militer
 waria	wanita pria

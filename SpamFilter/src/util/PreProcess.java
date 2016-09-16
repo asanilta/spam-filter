@@ -9,6 +9,7 @@ import IndonesianNLP.IndonesianNETagger;
 import IndonesianNLP.IndonesianSentenceDetector;
 import IndonesianNLP.IndonesianSentenceFormalization;
 import IndonesianNLP.IndonesianSentenceTokenizer;
+import IndonesianNLP.IndonesianStemmer;
 import com.opencsv.CSVReader;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -52,10 +53,18 @@ public class PreProcess {
     }
     
     public static ArrayList<String> run (String message) {      
-        message = message.toLowerCase();
+        //message = message.toLowerCase();
         
         IndonesianSentenceDetector detector = new IndonesianSentenceDetector();
         ArrayList<String> sentenceList = detector.splitSentence(message);
+        
+        /*for (String s : sentenceList) {
+            IndonesianNETagger inner = new IndonesianNETagger(); 
+            ArrayList<String[]> NETag = inner.NETagLine(s);
+            for (int i = 0; i < NETag.size(); i++) {
+                System.out.println(NETag.get(i)[0] + " - " + NETag.get(i)[2]);
+            }                    
+	}*/
         
         IndonesianSentenceTokenizer tokenizer = new IndonesianSentenceTokenizer();
         ArrayList<String> token = new ArrayList<String>();
@@ -68,6 +77,8 @@ public class PreProcess {
         formalizer.initStopword(); 
         ArrayList<String> result = new ArrayList<String>();
             
+        IndonesianStemmer stemmer = new IndonesianStemmer();        
+        
         for (int i = 0; i < token.size(); i++) {
             String word = token.get(i);
             
@@ -79,13 +90,20 @@ public class PreProcess {
                 }
             }
             String r = formalizer.deleteStopword(formalizer.formalizeWord(word)).trim();            
-            for (String l : r.split("[,/.()+-=]")) {
-                result.add(formalizer.formalizeWord(l).trim());                
+            for (String l : r.split("[,/.()+-=]")) {                
+                String temp = formalizer.formalizeWord(l).trim();
+                
+                if (!temp.equals("_PHONE_") && !temp.equals("_URL_")) {
+                    temp = temp.replaceAll("[^a-zA-Z\\d\\s:]", "");
+                }
+                
+                result.add(formalizer.formalizeWord(stemmer.stem(temp)));
             }            
         }        
                 
-        result.removeAll(Arrays.asList("", null, "-", ".", ":", ";", "+", "(", ")", "*", "!", "?", ",", "/", "\\", "[", "]", "<", ">", "=", "_", "\""));
-                              
+        result.removeAll(Arrays.asList("", null));
+                
+        //System.out.println(result.toString());
         return result;    
     }
     

@@ -47,12 +47,13 @@ public class FeatureExtract {
             // train with simple cart
             SimpleCart classifier = new SimpleCart();
             classifier.buildClassifier(dataFiltered);
+            System.out.println("\n\nClassifier model:\n\n" + classifier.toString());
             
             // using 10 cross validation
             Evaluation eval = new Evaluation(dataFiltered);
             eval.crossValidateModel(classifier, dataFiltered, 10, new Random(1));
             
-            System.out.println("\n\nClassifier model:\n\n" + eval.toSummaryString());
+            System.out.println("\n\nCross fold:\n\n" + eval.toSummaryString());
         } catch (Exception ex) {
             Logger.getLogger(FeatureExtract.class.getName()).log(Level.SEVERE, null, ex);
         }

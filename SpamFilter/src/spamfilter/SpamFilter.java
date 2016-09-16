@@ -26,6 +26,9 @@ public class SpamFilter {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        /*Test*/
+        //PreProcess.run("Yoga jelek sekali.fer, apakabar?");        
+        
         String currentDir = System.getProperty("user.dir");
         SpamFilterConfig.initializeConfig(
                 currentDir + "\\dataset\\Text Dataset - SPAM.csv",
